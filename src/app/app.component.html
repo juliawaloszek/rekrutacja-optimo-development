@@ -1,3 +1,10 @@
-<app-weather-card></app-weather-card>
-<app-weather-card></app-weather-card>
-<app-weather-card></app-weather-card>
+<h1 class="title">Weather in selected cities:</h1>
+
+
+<div class="row">
+  <div *ngFor="let basicWeather of basicWeathers">
+    <app-weather-card
+      [basicWeatherData]="basicWeather">
+    </app-weather-card>
+  </div>
+</div>

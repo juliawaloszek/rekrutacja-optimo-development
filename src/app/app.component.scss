@@ -1,0 +1,14 @@
+.title {
+  display: flex;
+  justify-content: center;
+  color: #797979;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}

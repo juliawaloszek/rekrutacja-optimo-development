@@ -1,0 +1,66 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-card {
+  cursor: pointer;
+  width: 16rem;
+  height: 16rem;
+  max-width: 250px;
+  max-height: 250px;
+  margin: 2rem 0.8rem;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+
+  background-color: white;
+  box-shadow: 0px 0px 25px 1px rgb(50 50 50 / 10%);
+  border: solid 1px rgba(50, 50, 50, 30%);
+
+  &:hover {
+    border-color: white;
+    outline: solid 3px rgba(50, 50, 50, 0.5);
+    box-shadow: 0px 0px 25px 1px rgb(50 50 50 / 40%);
+  }
+
+
+  &-title {
+
+    font-weight: 300;
+    font-size: 32px;
+    color: #d2d2d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-subtitle {
+    margin: 0;
+    color: #b8b8b8;
+    font-weight: 300;
+    font-size: 20px;
+
+    &:after {
+      content: '°C'
+    }
+  }
+
+  &-desc {
+    font-size: 16px;
+    line-height: 16px;
+    color: #cbcbcb;
+  }
+
+  &-content {
+    margin-left: 1em;
+  }
+
+}

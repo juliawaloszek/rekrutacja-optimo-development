@@ -1,3 +1,18 @@
-<p>
-  weather-card works!
-</p>
+<button
+  (click)="openDetails()"
+  class="weather-card">
+  <h5 class="weather-card-title">
+    {{basicWeatherData.city}}
+  </h5>
+
+  <div class="row">
+    <div class="column weather-card-content">
+      <h6 class="weather-card-subtitle">
+        {{basicWeatherData.temp | number: '1.0-0'}}
+      </h6>
+
+      <p class="weather-card-desc">{{basicWeatherData.weather[0].description | titlecase}} </p>
+    </div>
+    <img [src]="imgUrl[0]+ basicWeatherData.weather[0].icon + imgUrl[1]">
+  </div>
+</button>
