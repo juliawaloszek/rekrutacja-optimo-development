@@ -1,6 +1,10 @@
-![Alt text](src/assets/app-screen-1.png?raw=true "Title")
-
 # RekrutacjaOptimoDevelopment
+
+[Przykładowe screeny z aplikacji]
+
+![Alt text](src/assets/app-screen-1.png?raw=true "Widok desktop")
+![Alt text](src/assets/app-screen-2.png?raw=true "Widok mobile")
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
 
